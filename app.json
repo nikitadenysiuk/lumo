@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "Lumo",
+    "slug": "lumo-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "lumo",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0F0F12"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.denysiuk.lumo",
+      "buildNumber": "1",
+      "usesAppleSignIn": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Нужен доступ к камере, чтобы фотографировать еду для анализа калорийности.",
+        "NSPhotoLibraryUsageDescription": "Нужен доступ к галерее, чтобы выбирать фото еды из библиотеки."
+      }
+    },
+    "android": {
+      "package": "com.denysiuk.lumo",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#E85A2A",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_MEDIA_IMAGES"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Нужен доступ к камере, чтобы фотографировать еду."
+        }
+      ],
+      "expo-localization",
+      "expo-font",
+      "expo-web-browser",
+      "expo-apple-authentication"
+    ]
+  }
+}
