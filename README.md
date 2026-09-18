@@ -4,6 +4,14 @@ An AI-powered calorie and nutrition tracker built with React Native (Expo). Poin
 
 This is a solo full-stack side project built end-to-end: mobile app, Postgres schema with row-level security, and a serverless AI proxy. It's shared here as a portfolio piece rather than published to the app stores.
 
+<p>
+  <img src="assets/screenshots/auth.png" width="260" alt="Sign-in screen" />
+  <img src="assets/screenshots/home.png" width="260" alt="Home dashboard with calorie ring, macros and diary" />
+  <img src="assets/screenshots/settings.png" width="260" alt="Settings: theme, accent color, units, language" />
+</p>
+
+*Screenshots show the app's real screens with sample data (not a live account).*
+
 ## What it does
 
 - **Photo → nutrition**: snap or upload a food photo, get calories/protein/fat/carbs and an editable per-ingredient breakdown (Gemini vision).
